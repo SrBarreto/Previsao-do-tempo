@@ -1,0 +1,175 @@
+ body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+
+      .weather-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+      }
+
+      .character-display {
+        text-align: center;
+        font-size: 120px;
+        margin: 30px 0;
+        min-height: 150px;
+        animation: fadeIn 0.5s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-5deg);
+        }
+        75% {
+          transform: rotate(5deg);
+        }
+      }
+
+      @keyframes rain {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+
+      .hot {
+        animation: bounce 1.5s infinite;
+      }
+
+      .cold {
+        animation: shake 1s infinite;
+      }
+
+      .rainy {
+        animation: rain 0.8s infinite;
+      }
+
+      .info-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 15px 0;
+        border-left: 5px solid #ffc107;
+      }
+
+      .weather-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .weather-item {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .weather-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .weather-item.cold {
+        background: linear-gradient(135deg, #667eea 0%, #4facfe 100%);
+      }
+
+      .weather-item.rainy {
+        background: linear-gradient(135deg, #667eea 0%, #7b68ee 100%);
+      }
+
+      .time {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-bottom: 10px;
+      }
+
+      .temp {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .rain {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      .title {
+        color: #667eea;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 32px;
+      }
+
+      .form-control,
+      .form-label {
+        color: #333;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        padding: 10px 30px;
+        font-size: 16px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .status-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #667eea;
+        margin-top: 20px;
+      }
+    .footer {
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+        border-top: 1px solid #ddd;
+        color: #555;
+        font-size: 14px;
+        
+      }
