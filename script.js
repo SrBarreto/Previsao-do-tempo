@@ -21,10 +21,10 @@ function getCharacter(status) {
 
 function getStatusText(status) {
   const texts = {
-    hot: "☀️ Quente! Está muito sol!",
-    cold: "❄️ Frio! Bem geladinho!",
-    rainy: "🌧️ Chuvoso! Molhadinho!",
-    normal: "🌤️ Clima agradável!",
+    hot: "☀️ Passe protetor solar! Está muito sol!",
+    cold: "❄️ Frio! Nao esqueça de se agasalhar!",
+    rainy: "🌧️ Chuvoso! Pegue um guarda-chuva!",
+    normal: "🌤️ Clima agradável! Aproveite o dia!",
   };
   return texts[status] || texts.normal;
 }
